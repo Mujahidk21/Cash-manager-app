@@ -5,26 +5,27 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="styles.css">
   <title>Cash register app</title>
 </head>
 
 <body>
   <div class="container">
-    <h1 class="heading">cash register app</h1>
-    <p class="description">enter bill amt and cash given</p>
+    <h1 class="heading">Cash Register App</h1>
+    <p class="description">Enter the bill amount and cash given by the customer and know minimum number of notes to return</p>
 
-    <label class="bill-amount">Bill Amount :</label>
-    <input type="text" id="bill-amount">
+    <label for="bill-amount">Bill Amount</label>
+    <input placeholder="Enter Num :" type="text" id="bill-amount">
 
-    <label id="cash-given">Cash Given :</label>
-    <input type="text" class="cash-given">
+    <label for="cash-given">Cash Given</label>
+    <input placeholder="Enter Num :" type="text" id="cash-given">
 
     <button id="check-button">Check</button>
     <p id="error-message"></p>
+
     <table class="change-table">
-      <caption>
-        Return Change
+      <caption id="id-button">
+        Return Change :
       </caption>
       <tr>
         <th>No of Notes</th>
@@ -54,6 +55,6 @@
     </table>
   </div>
 </body>
-<script src="./app.js"></script>
+<script src="./app.js" text="text/javascipt"></script>
 
 </html>
