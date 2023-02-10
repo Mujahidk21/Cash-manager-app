@@ -11,9 +11,9 @@ checkButton.addEventListener("click", function validateBillAndCashAmount () {
     hidemessage();
     if (billAmount.value > 0) {
         if (billAmount.value > cashGiven.value) {
-            showMessage("you need to pay more !");
+            showMessage("you need to pay more ! Bill > Cash Given");
         } else if (billAmount.value == cashGiven.value) {
-            showMessage("you are good to go !");
+            showMessage("you are good to go ! Bill = Cash Given");
         } else {
             const amountToBeReturned = cashGiven.value - billAmount.value;
             calculateChange(amountToBeReturned);
