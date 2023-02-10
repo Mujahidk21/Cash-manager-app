@@ -89,8 +89,7 @@ input {
   width: 50%;
   text-align: justify;
   border-collapse: collapse;
-  /* margin: auto; */
-  margin-left: 70px;
+  margin: auto;
 }
 
 .change-table caption {
