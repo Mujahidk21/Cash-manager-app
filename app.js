@@ -4,10 +4,30 @@ const checkButton = document.querySelector("#check-button");
 const message = document.querySelector("#error-message");
 const noOfNotes = document.querySelectorAll(".no-of-notes");
 const idButton = document.querySelector("#id-button");
+// const nextButton = document.querySelector(".next-button");
 
 const availableNotes = [2000, 500, 200, 100, 50, 20, 10, 5, 1];
 
-checkButton.addEventListener("click", function validateBillAndCashAmount() {
+// nextButton.addEventListener("click", handlenextButton);
+checkButton.addEventListener("click", validateBillAndCashAmount);
+
+//add next func later
+// function handlenextButton() {
+//     hidemessage();
+//     let billAmount = parseInt(billAmount);
+//     if (!Number.isInteger(billAmount)) {
+//         showMessage("enter valid amt");
+//     } else if (billAmount > 0) {
+//         document.querySelector(".cash-given").style.display = "block";
+//         document.querySelector(".check-button").style.display = "inline-block";
+//         nextButton.style.display = "none";
+//     } else if (billAmount > 0); {
+//         showMessage("bill  >  0");
+//     }
+// }
+
+
+function validateBillAndCashAmount() {
     hidemessage();
     if (billAmount.value > 0) {
         if (billAmount.value > cashGiven.value) {
@@ -21,7 +41,7 @@ checkButton.addEventListener("click", function validateBillAndCashAmount() {
     } else {
         showMessage("Your bill amount should be greater than 0")
     }
-});
+};
 
 function calculateChange(amountToBeReturned) {
     idButton.innerText = "Change to be returned " + amountToBeReturned;

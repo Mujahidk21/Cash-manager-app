@@ -57,6 +57,20 @@ input {
   margin-bottom: 1rem;
 }
 
+/* .next {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-weight: bold;
+  border: 2px solid rgb(51, 0, 255);
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.next:hover {
+  background-color: #fecaca;
+} */
+
 #check-button {
   background-color: #f365e2;
   border: none;
