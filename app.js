@@ -6,7 +6,7 @@ const noOfNotes = document.querySelectorAll(".no-of-notes");
 const idButton = document.querySelector("#id-button");
 // const nextButton = document.querySelector(".next-button");
 
-const availableNotes = [2000, 500, 200, 100, 50, 20, 10, 5, 1];
+const availableNotes = [2000, 500, 100, 20, 10, 5, 1];
 
 // nextButton.addEventListener("click", handlenextButton);
 checkButton.addEventListener("click", validateBillAndCashAmount);
