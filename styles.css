@@ -106,3 +106,17 @@ td {
   border-collapse: collapse;
   padding: 0.5rem;
 }
+.item-inline {
+    display: inline;
+    padding: 1.1rem;
+    margin-top: 2rem auto;
+}
+
+.footer {
+   margin-top: 2rem;
+    font-size: large;
+    font-weight: bolder;
+}
+.footer > p{
+  margin-bottom:  1rem;
+}
